@@ -33,8 +33,9 @@ Python 3.5
 
 If you find this code useful, please cite the following paper:
 
-@article{privacy_adversarial_2018, 
-  title={Towards Privacy-Preserving Visual Recognition via Adversarial Training: A Pilot Study}, 
-  journal={ECCV}, 
-  author={Wu, Zhenyu and Wang, Zhangyang and Wang, Zhaowen and Jin, Hailin}, 
-year={2018}}
+    @article{privacy_adversarial_2018, 
+      title={Towards Privacy-Preserving Visual Recognition via Adversarial Training: A Pilot Study}, 
+      journal={ECCV}, 
+      author={Wu, Zhenyu and Wang, Zhangyang and Wang, Zhaowen and Jin, Hailin}, 
+      year={2018}
+    }
