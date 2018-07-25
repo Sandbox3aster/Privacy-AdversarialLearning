@@ -3,7 +3,7 @@
 
 ## Introduction
 
-TensorFlow Implementation of our ECCV 2018 paper ["Towards Privacy-Preserving Visual Recognition via Adversarial Training: A Pilot Study"]
+TensorFlow Implementation of our ECCV 2018 paper ["Towards Privacy-Preserving Visual Recognition via Adversarial Training: A Pilot Study"](https://arxiv.org/abs/1807.08379).
 
 This paper aims to improve privacy-preserving visual recognition, an increasingly demanded feature in smart camera applications, by formulating a unique adversarial training framework. 
 
