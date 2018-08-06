@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="WebServers">
+    <option name="servers">
+      <webServer id="1fb30ce1-4ff4-4f59-a322-69934609928a" name="VITA2" url="http:///">
+        <fileTransfer host="vita2.cse.tamu.edu" port="22" rootFolder="/home/wuzhenyu_sjtu" accessType="SFTP">
+          <option name="port" value="22" />
+        </fileTransfer>
+      </webServer>
+    </option>
+  </component>
+</project>

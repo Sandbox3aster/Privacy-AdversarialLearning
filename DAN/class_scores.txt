@@ -1,0 +1,8 @@
+attribute_id	attribute_name	num_occurrences	ap
+a0_safe	Safe	4037.0	89.34479623099713
+a12_semi_nudity	Semi-nudity	3236.0	88.627444804942
+a46_occupation	Occupation	1818.0	57.45624328914436
+a58_hobbies	Hobbies	1408.0	46.80771533345065
+a59_sports	Sports	3713.0	92.12968898688248
+a64_rel_personal	Personal Relationships	2212.0	73.83999489473229
+a65_rel_social	Social Circle	3534.0	91.1430142663219

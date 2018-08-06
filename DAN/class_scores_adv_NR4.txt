@@ -1,0 +1,18 @@
+attribute_id	attribute_name	num_occurrences	ap
+a0_safe	Safe	4010.0	91.10740120077341
+a1_age_approx	Age Group	3211.0	89.40798277678896
+a2_weight_approx	Weight Group	1805.0	59.51453234478172
+a3_height_approx	Height Group	1398.0	48.50353994137948
+a4_gender	Gender	3685.0	92.76552140925483
+a5_eye_color	Eye Color	2195.0	75.71098862249987
+a6_hair_color	Hair Color	3510.0	91.92152124803998
+a9_face_complete	Face (Complete)	2768.0	85.89313362363275
+a10_face_partial	Face (Partial)	2309.0	78.04314414941145
+a12_semi_nudity	Semi-nudity	435.0	37.35628370732785
+a16_race	Race	3471.0	92.22735524856925
+a17_color	Skin Color	3750.0	93.12658097799212
+a46_occupation	Occupation	655.0	35.386688480326086
+a58_hobbies	Hobbies	138.0	11.254047778196064
+a59_sports	Sports	327.0	35.087520909474115
+a64_rel_personal	Personal Relationships	251.0	14.840368924126313
+a65_rel_social	Social Circle	563.0	26.518558669188337

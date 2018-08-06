@@ -1,0 +1,737 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="5333bab8-5dc3-406f-9bcb-c002a3e2326e" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/candy.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/cubist.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/denoised_starry.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/feathers.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/mosaic.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/scream.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/udnie.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/conf/wave.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/eval.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/export.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/candy.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/cubist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/denoised_starry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/feathers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/mosaic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/cubist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/denoised_starry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/feathers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/mosaic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/scream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_cubist.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_denoised_starry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_feathers.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_mosaic.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_scream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_udnie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/style_wave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/udnie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/results/wave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/scream.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/starry.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/test5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/udnie.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/img/wave.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/losses.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/model.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/alexnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/alexnet_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/cifarnet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_resnet_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_resnet_v2_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v1_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v2_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v3.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v3_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v4.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/inception_v4_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/lenet.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/nets_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/nets_factory_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/overfeat.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/overfeat_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/resnet_utils.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/resnet_v1.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/resnet_v1_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/resnet_v2.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/resnet_v2_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/vgg.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/nets/vgg_test.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/__init__.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/cifarnet_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/inception_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/lenet_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/preprocessing_factory.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/preprocessing/vgg_preprocessing.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/reader.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/train.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/fast-neural-style-tensorflow/utils.py" beforeDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="CoverageDataManager">
+    <SUITE FILE_PATH="coverage/DAN_VISPR_UCF$main.coverage" NAME="main Coverage Results" MODIFIED="1533434644721" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/privacy_attributes_prediction" />
+    <SUITE FILE_PATH="coverage/DAN_VISPR_UCF$run_gpu.coverage" NAME="run_gpu Coverage Results" MODIFIED="1533271900675" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/DAN" />
+    <SUITE FILE_PATH="coverage/DAN_VISPR_UCF$evaluate.coverage" NAME="evaluate Coverage Results" MODIFIED="1533530176976" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="true" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$/two_fold_evaluation" />
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="-1856904356">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="3" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.1" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.opened" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="py" value="68" />
+          <entry key="txt" value="4" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PLAIN_TEXT" value="4" />
+          <entry key="Python" value="68" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="py" value="5894" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="Python" value="5894" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <splitter split-orientation="horizontal" split-proportion="0.62339514">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/DAN/run_gpu.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="-7">
+                  <caret line="2011" column="38" lean-forward="true" selection-start-line="2011" selection-start-column="38" selection-end-line="2011" selection-end-column="38" />
+                  <folding>
+                    <element signature="e#752#1247#0" />
+                    <element signature="e#1300#1416#0" />
+                    <element signature="e#1469#1660#0" />
+                    <element signature="e#1750#2142#0" />
+                    <element signature="e#2184#3597#0" />
+                    <element signature="e#3633#3791#0" />
+                    <element signature="e#3829#28570#0" />
+                    <element signature="e#28617#64454#0" />
+                    <element signature="e#75295#82207#0" />
+                    <element signature="e#82245#122013#0" />
+                    <element signature="e#122050#130158#0" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/two_fold_evaluation/evaluate.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="315">
+                  <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/DAN/tf_flags.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="15">
+                  <caret line="21" column="52" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/two_fold_evaluation/slim_flags.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="165">
+                  <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+                  <folding>
+                    <element signature="e#0#23#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/input_data.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="120">
+                  <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/privacy_attributes_prediction/main.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="627">
+                  <caret line="682" column="60" selection-start-line="682" selection-start-column="46" selection-end-line="682" selection-end-column="60" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/privacy_attributes_prediction/tf_flags.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="219">
+                  <caret line="51" column="33" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="33" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/two_fold_evaluation/evaluate.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="237">
+                  <caret line="94" selection-start-line="94" selection-end-line="94" />
+                  <folding>
+                    <element signature="e#0#38#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Python Script" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>session res</find>
+      <find>gpu_</find>
+      <find>17</find>
+      <find>7</find>
+      <find>n_mi</find>
+      <find>n_mini</find>
+      <find>num_classes</find>
+      <find>num_clas</find>
+      <find>mobilenet</find>
+      <find>keep</find>
+      <find>gpu</find>
+      <find>checkpoint_dir</find>
+      <find>FLAGS.checkpoint_dir</find>
+      <find>FLAGS.ckpt_dir</find>
+      <find>../</find>
+      <find>n_minibatches</find>
+      <find>weight_decay</find>
+      <find>flags.</find>
+      <find>flags.checkpoint_path</find>
+      <find>sess.r</find>
+      <find>saver.restore</find>
+      <find>ckpt_dir</find>
+      <find>continue</find>
+      <find>is_training</find>
+      <find>istraining_plac</find>
+      <find>ses</find>
+      <find>max_to</find>
+      <find>session re</find>
+      <find>session restore</find>
+      <find>mini</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>residualNet</replace>
+      <replace>inputs_</replace>
+      <replace>utilityNet.C3DNet</replace>
+      <replace>FLAGS.ckpt_dir</replace>
+    </replaceStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/fast-neural-style-tensorflow" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/DAN/tf_flags.py" />
+        <option value="$PROJECT_DIR$/evaluation/evaluate.py" />
+        <option value="$PROJECT_DIR$/two_fold_evaluation/input_slim.py" />
+        <option value="$PROJECT_DIR$/DAN/residualNet.py" />
+        <option value="$PROJECT_DIR$/DAN/input_data.py" />
+        <option value="$PROJECT_DIR$/C3D.py" />
+        <option value="$PROJECT_DIR$/utilityNet.py" />
+        <option value="$PROJECT_DIR$/degradNet.py" />
+        <option value="$PROJECT_DIR$/budgetNet.py" />
+        <option value="$PROJECT_DIR$/nets/mobilenet_v1.py" />
+        <option value="$PROJECT_DIR$/input_data.py" />
+        <option value="$PROJECT_DIR$/privacy_attributes_prediction/tf_flags.py" />
+        <option value="$PROJECT_DIR$/privacy_attributes_prediction/main.py" />
+        <option value="$PROJECT_DIR$/DAN/run_gpu.py" />
+        <option value="$PROJECT_DIR$/two_fold_evaluation/evaluate.py" />
+        <option value="$PROJECT_DIR$/two_fold_evaluation/slim_flags.py" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2165" />
+    <option name="y" value="-28" />
+    <option name="width" value="1853" />
+    <option name="height" value="1076" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+              <item name="action_recognition" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+              <item name="DAN" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+              <item name="fast-neural-style-tensorflow" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+              <item name="privacy_attributes_prediction" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DAN_VISPR_UCF" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DAN_VISPR_UCF" type="462c0819:PsiDirectoryNode" />
+              <item name="two_fold_evaluation" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../DAN_SBU" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Python.evaluate">
+    <configuration name="evaluate" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DAN_VISPR_UCF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/two_fold_evaluation" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/two_fold_evaluation/evaluate.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DAN_VISPR_UCF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/privacy_attributes_prediction" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/privacy_attributes_prediction/main.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <configuration name="run_gpu" type="PythonConfigurationType" factoryName="Python" temporary="true">
+      <module name="DAN_VISPR_UCF" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <envs>
+        <env name="PYTHONUNBUFFERED" value="1" />
+      </envs>
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/DAN" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <EXTENSION ID="PythonCoverageRunConfigurationExtension" runner="coverage.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/DAN/run_gpu.py" />
+      <option name="PARAMETERS" value="" />
+      <option name="SHOW_COMMAND_LINE" value="false" />
+      <option name="EMULATE_TERMINAL" value="false" />
+      <option name="MODULE_MODE" value="false" />
+      <option name="REDIRECT_INPUT" value="false" />
+      <option name="INPUT_FILE" value="" />
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="Python.run_gpu" />
+      <item itemvalue="Python.evaluate" />
+      <item itemvalue="Python.main" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Python.evaluate" />
+        <item itemvalue="Python.main" />
+        <item itemvalue="Python.run_gpu" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="5333bab8-5dc3-406f-9bcb-c002a3e2326e" name="Default Changelist" comment="" />
+      <created>1532729521923</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1532729521923</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1985" y="-4" width="1855" height="1084" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.22498618" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.2248954" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
+      <window_info anchor="bottom" id="Python Console" order="11" />
+      <window_info anchor="bottom" id="Docker" order="12" show_stripe_button="false" />
+      <window_info anchor="bottom" id="File Transfer" order="13" weight="0.32845187" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Database" order="3" sideWeight="0.49755302" weight="0.32982844" />
+      <window_info anchor="right" id="SciView" order="4" sideWeight="0.502447" side_tool="true" weight="0.32946378" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/nets/resnet_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4035">
+          <caret line="275" column="36" selection-start-line="275" selection-start-column="24" selection-end-line="275" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evaluate/evaluate.py" />
+    <entry file="file://$PROJECT_DIR$/evaluation/evaluate.py" />
+    <entry file="file://$PROJECT_DIR$/DAN/net.py" />
+    <entry file="file://$PROJECT_DIR$/DAN/model.py" />
+    <entry file="file://$PROJECT_DIR$/DAN/classInd.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-894" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/class_scores.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/class_scores_adv_NR4.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/input_data.py" />
+    <entry file="file://$PROJECT_DIR$/DAN/residualNet.py" />
+    <entry file="file://$PROJECT_DIR$/two_fold_evaluation/input_slim.py" />
+    <entry file="file://$PROJECT_DIR$/model.py" />
+    <entry file="file://$PROJECT_DIR$/C3D.py" />
+    <entry file="file://$PROJECT_DIR$/degradNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
+          <folding>
+            <element signature="e#125#557#0" />
+            <element signature="e#637#1160#0" />
+            <element signature="e#1247#2223#0" />
+            <element signature="e#2252#2396#0" />
+            <element signature="e#2451#3292#0" />
+            <element signature="e#3316#3478#0" />
+            <element signature="e#3528#3786#0" />
+            <element signature="e#3828#5528#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/budgetNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1080">
+          <caret line="76" column="70" selection-start-line="76" selection-start-column="70" selection-end-line="76" selection-end-column="70" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nets/nets_factory.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-360" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/utilityNet.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="300">
+          <caret line="50" column="34" selection-start-line="50" selection-start-column="34" selection-end-line="50" selection-end-column="34" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/nets/mobilenet_v1.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="232">
+          <caret line="355" column="23" selection-start-line="355" selection-start-column="11" selection-end-line="355" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privacy_attributes_prediction/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="236">
+          <caret line="25" column="38" selection-start-line="25" selection-start-column="27" selection-end-line="25" selection-end-column="38" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action_recognition/VideoReader.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#18#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action_recognition/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action_recognition/convert2records.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-904" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action_recognition/util.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-135" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/action_recognition/run_gpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="e#2926#12250#0" />
+            <element signature="e#12275#15631#0" />
+            <element signature="e#15670#16547#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privacy_attributes_prediction/tf_flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="219">
+          <caret line="51" column="33" selection-start-line="51" selection-start-column="30" selection-end-line="51" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/privacy_attributes_prediction/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="627">
+          <caret line="682" column="60" selection-start-line="682" selection-start-column="46" selection-end-line="682" selection-end-column="60" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/two_fold_evaluation/evaluate.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="315">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/two_fold_evaluation/slim_flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="11" column="18" selection-start-line="11" selection-start-column="18" selection-end-line="11" selection-end-column="18" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/input_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="14" column="79" selection-start-line="14" selection-start-column="79" selection-end-line="14" selection-end-column="79" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/run_gpu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-7">
+          <caret line="2011" column="38" lean-forward="true" selection-start-line="2011" selection-start-column="38" selection-end-line="2011" selection-end-column="38" />
+          <folding>
+            <element signature="e#752#1247#0" />
+            <element signature="e#1300#1416#0" />
+            <element signature="e#1469#1660#0" />
+            <element signature="e#1750#2142#0" />
+            <element signature="e#2184#3597#0" />
+            <element signature="e#3633#3791#0" />
+            <element signature="e#3829#28570#0" />
+            <element signature="e#28617#64454#0" />
+            <element signature="e#75295#82207#0" />
+            <element signature="e#82245#122013#0" />
+            <element signature="e#122050#130158#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/DAN/tf_flags.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="21" column="52" selection-start-line="21" selection-start-column="50" selection-end-line="21" selection-end-column="52" />
+          <folding>
+            <element signature="e#0#23#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
