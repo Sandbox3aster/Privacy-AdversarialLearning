@@ -1,0 +1,29 @@
+TRAIN:
+  BATCH_SIZE: 8
+  GPU_NUM: 2
+  MOVING_AVERAGE_DECAY: 0.9999
+  NUM_EXAMPLES_PER_EPOCH: 500
+  SAVE_STEP: 50
+  MAX_STEPS: 2000
+  VAL_STEP: 25
+TEST:
+  BATCH_SIZE: 4
+  GPU_NUM: 4
+MODEL:
+  PRETRAINED_C3D: '../pretrained/C3D/conv3d_deepnetA_sport1m_iter_1900000_TF.model'
+  UTILITY_MODEL: '../checkpoint/utility'
+DATA:
+  TRAIN_FILES_DIR: '../data/joint_adv/RGB/noisy/train'
+  VAL_FILES_DIR: '../data/joint_adv/RGB/clean/val'
+  TEST_FILES_DIR: '../data/joint_adv/RGB/clean/test'
+  LOG_DIR: 'tensorboard_events'
+  NCHANNEL: 3
+  DEPTH: 16
+  WIDTH: 160
+  HEIGHT: 120
+  CROP_HEIGHT: 112
+  CROP_WIDTH: 112
+  USE_CROP: True
+  USE_RANDOM_CROP: False
+  USE_CENTER_CROP: True
+  NUM_THREADS: 10
