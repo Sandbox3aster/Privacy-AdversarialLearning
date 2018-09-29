@@ -263,7 +263,7 @@ def run_testing(cfg, degrad_ckpt_file, ckpt_dir, model_name, is_training):
             print(val_files)
 
             if is_training:
-                videos_op, _, labels_op = inputs_videos(filenames = val_files,
+                videos_op, _, labels_op = inputs_videos(filenames = train_files,
                                                  batch_size=cfg['TRAIN']['BATCH_SIZE'] * cfg['TRAIN']['BATCH_SIZE'],
                                                  num_epochs=None,
                                                  num_threads=cfg['DATA']['NUM_THREADS'],
