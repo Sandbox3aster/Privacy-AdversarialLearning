@@ -50,7 +50,7 @@ def tower_loss_max_xentropy_uniform(logits_lst):
                                    1 / num_classes, dtype=np.float32)
     uniform_labels = tf.convert_to_tensor(uniform_labels, np.float32)
     for logits in logits_lst:
-        xentropy_uniform_tensor = tf.reduce_mean(tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=uniform_labels), axis=1)
+        xentropy_uniform_tensor = tf.nn.softmax_cross_entropy_with_logits(logits=logits, labels=uniform_labels)
         xentropy_uniform_tensor_lst.append(xentropy_uniform_tensor)
     xentropy_uniform_tensor_stack = tf.stack(xentropy_uniform_tensor_lst, axis=0)
     argmax_xentropy_uniform = tf.argmax(xentropy_uniform_tensor_stack, axis=0)
