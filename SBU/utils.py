@@ -7,8 +7,8 @@ import tensorflow as tf
 def restore_model_ckpt(sess, ckpt_dir, varlist, modulename):
     ckpt = tf.train.get_checkpoint_state(checkpoint_dir=ckpt_dir)
     if ckpt and ckpt.model_checkpoint_path:
-        print("##########################{}##########################".format(modulename))
-        print(varlist)
+        #print("##########################{}##########################".format(modulename))
+        #print(varlist)
         saver = tf.train.Saver(varlist)
         saver.restore(sess, ckpt.model_checkpoint_path)
         print('Session restored from pretrained model at {}!'.format(ckpt.model_checkpoint_path))
@@ -20,8 +20,8 @@ def restore_model_pretrained_MobileNet(sess, cfg, multiplier):
     varlist = [v for v in tf.trainable_variables() if
                any(x in v.name.split('/')[0] for x in ["BudgetModule_{}".format(multiplier)])]
     varlist = [v for v in varlist if not any(x in v.name for x in ["Conv2d_1c_1x1"])]
-    print("###############################BudgetModule_{}###############################".format(multiplier))
-    print(varlist)
+    #print("###############################BudgetModule_{}###############################".format(multiplier))
+    #print(varlist)
     vardict = {v.name[:-2].replace('BudgetModule_{}'.format(multiplier), 'MobilenetV1'): v for v in varlist}
 
     mobilenet_dict = {1.0: cfg['MODEL']['PRETRAINED_MOBILENET_10'],
