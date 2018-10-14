@@ -6,8 +6,8 @@ WEIGHTS_INIT_STDEV = .1
 #h ttps://arxiv.org/abs/1603.08155
 # The code is from https://github.com/amirbar/fast-style-transfer-1/blob/master/transform.py
 def residualNet(X, is_video):
-    batch_size, depth, height, width, nchannel = X.get_shape()
     if is_video:
+        batch_size, depth, height, width, nchannel = X.get_shape()
         X = tf.reshape(X, [batch_size * depth, height, width, nchannel])
     with tf.variable_scope('DegradationModule'):
         conv1 = _conv_layer(X, 32, 9, 1, name='conv1')
