@@ -12,6 +12,8 @@ The proposed framework explicitly learns a degradation transform for the origina
 Such an uncommon situation has motivated us to propose two strategies to enhance the generalization of the learned degradation on protecting privacy against unseen hacker models. Novel training strategies, evaluation protocols, and result visualization methods have been designed accordingly. 
 
 Two experiments on privacy-preserving action recognition, with privacy budgets defined in various ways, manifest the compelling effectiveness of the proposed framework in simultaneously maintaining high target task (action recognition) performance while suppressing the privacy breach risk.
+## Pretrained C3DNet on Sports1M and MobileNet on ImageNet
+Google Drive: https://drive.google.com/file/d/1XDO_arUYPl9A5Sg-RXGskh6u4sr-C0tc/view?usp=sharing
 ## Pretrained checkpoints for adversarial training on SBU
 Google Drive: https://drive.google.com/file/d/1dIwr7JrFVkuo9X0WXpSqkzQNr_jhRzv7/view?usp=sharing
 ## To do items
