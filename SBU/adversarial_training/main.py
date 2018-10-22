@@ -831,10 +831,12 @@ class AdversarialTraining(object):
                 for gpu_index in range(0, self.cfg['TEST']['GPU_NUM']):
                     with tf.device('/gpu:%d' % gpu_index):
                         print('/gpu:%d' % gpu_index)
-                        videos = videos_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
-                        utility_labels = utility_labels_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
-                        budget_labels = budget_labels_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
-                        _, _, _, logits_budget, logits_utility, _ = self.create_architecture_adversarial(scope, videos, utility_labels, budget_labels, dropout_placeholder, is_training_placeholder, None)
+                        with tf.name_scope('%s_%d' % ('gpu', gpu_index)) as scope:
+                            videos = videos_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
+                            utility_labels = utility_labels_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
+                            budget_labels = budget_labels_placeholder[gpu_index * self.cfg['TRAIN']['BATCH_SIZE']:(gpu_index + 1) * self.cfg['TRAIN']['BATCH_SIZE']]
+                            _, _, _, logits_budget, logits_utility, _ = self.create_architecture_adversarial(scope, videos, utility_labels, budget_labels, dropout_placeholder, is_training_placeholder, None)
+                            tf.get_variable_scope().reuse_variables()
 
                 logits_utility = tf.concat(logits_utility_lst, 0)
                 logits_budget = tf.concat(logits_budget_lst, 0)
