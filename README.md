@@ -13,6 +13,8 @@ Such an uncommon situation has motivated us to propose two strategies to enhance
 
 Two experiments on privacy-preserving action recognition, with privacy budgets defined in various ways, manifest the compelling effectiveness of the proposed framework in simultaneously maintaining high target task (action recognition) performance while suppressing the privacy breach risk.
 
+## Pretrained models for two-fold evaluation
+Google Drive: https://drive.google.com/file/d/1caYODcBzfp6yTJdbCJQuIlhUouMZcQC3/view?usp=sharing
 ## SBU data in tfrecords format
 Google Drive: https://drive.google.com/file/d/1-BZgg7hRhjRfnXyzHiwyKZncwtloFPOo/view?usp=sharing
 ## Pretrained C3DNet on Sports1M and MobileNet on ImageNet
